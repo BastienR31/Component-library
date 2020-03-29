@@ -88,6 +88,8 @@
     "webpack-md5-hash": "^0.0.6"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.8",
+    "@material-ui/icons": "^4.9.1",
     "lodash": "^4.17.13",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",

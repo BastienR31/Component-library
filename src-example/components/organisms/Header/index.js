@@ -11,7 +11,7 @@ const Wrapper = styled(Block)`
   @media screen and (max-width: 640px) {
     padding: 0.5rem;
   }
-`
+`;
 
 const InnerWrapper = styled.div`
   display: flex;

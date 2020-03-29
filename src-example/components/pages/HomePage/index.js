@@ -3,7 +3,7 @@ import React from 'react'
 
 import {
   PageTemplate, Header, Hero, Footer, FeatureList,
-} from 'components'
+} from 'components';
 
 const HomePage = () => {
   return (
@@ -17,4 +17,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default HomePage;

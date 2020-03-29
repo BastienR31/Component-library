@@ -1,26 +1,25 @@
 // https://github.com/diegohaz/arc/wiki/Webpack
-const path = require('path')
-const webpack = require('webpack')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const WebpackMd5Hash = require('webpack-md5-hash')
-const HappyPack = require('happypack')
-const mergeWith = require('lodash/mergeWith')
-const isArray = require('lodash/isArray')
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const WebpackMd5Hash = require('webpack-md5-hash');
+const HappyPack = require('happypack');
+const mergeWith = require('lodash/mergeWith');
+const isArray = require('lodash/isArray');
 
-
-const host = process.env.HOST || 'localhost'
-const port = process.env.PORT || 3000
-const sourceDir = process.env.SOURCE || 'src'
-const publicPath = `/${process.env.PUBLIC_PATH || ''}/`.replace('//', '/')
-const sourcePath = path.join(process.cwd(), sourceDir)
-const outputPath = path.join(process.cwd(), 'dist')
+const host = process.env.HOST || 'localhost';
+const port = process.env.PORT || 3000;
+const sourceDir = process.env.SOURCE || 'src';
+const publicPath = `/${process.env.PUBLIC_PATH || ''}/`.replace('//', '/');
+const sourcePath = path.join(process.cwd(), sourceDir);
+const outputPath = path.join(process.cwd(), 'dist');
 
 function customizer(objValue, srcValue) {
   if (isArray(objValue)) {
-    return objValue.concat(srcValue)
+    return objValue.concat(srcValue);
   }
-  return undefined
+  return undefined;
 }
 
 const wpConfig = {

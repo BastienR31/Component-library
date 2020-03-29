@@ -8,8 +8,11 @@ import { HomePage } from 'components'
 import theme from './themes/default'
 
 injectGlobal`
-  body {
+  html, 
+  body,
+  main {
     margin: 0;
+    height: 100%;
   }
 `
 
@@ -23,4 +26,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
