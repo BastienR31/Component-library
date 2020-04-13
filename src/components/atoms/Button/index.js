@@ -18,10 +18,10 @@ const StyledButton = styled.button`
     height: 50px;
     font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: ${props => props.backgroundColor};
     color: ${props => props.color};
-
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 25, .2);
     padding: 5px 5px;
 
 `;

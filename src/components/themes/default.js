@@ -34,4 +34,4 @@ theme.sizes = {
   maxWidth: '1100px',
 }
 
-export default theme
+export default theme;

@@ -28,6 +28,7 @@ const wpConfig = {
       rules: [
         { test: /\.jsx?$/, exclude: /node_modules/, use: 'happypack/loader' },
         { test: /\.(png|jpe?g|svg|woff2?|ttf|eot)$/, loader: 'url-loader?limit=8000' },
+        { test: /\.css$/, loader: 'file-loader?name=fonts/[name].[ext]' }
       ],
     },
     plugins: [
